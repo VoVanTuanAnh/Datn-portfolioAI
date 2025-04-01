@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import AuthImg from '@/public/Abstract Curves and Colors.jpeg'
 import { Logo } from "@/components/Logo";
+import AuthForm from "@/components/authentication/AuthForm";
 
 const AuthenticationPage = () =>{
     return (
@@ -27,8 +28,10 @@ const AuthenticationPage = () =>{
                 <div className='w-full h-[40%] bg-gradient-to-b from-transparent to-black/50 absolute bottom-0 left-0 z-10'></div>
 
             </div>
-            <div >
-                Loginform
+            <div className='relative flex flex-col items-center justify-center p-8 h-full w-full' > 
+               <div className='max-w-xl w-[350px] mx-auto'>
+                <AuthForm/>
+               </div>
             </div>
        </main>
     )
