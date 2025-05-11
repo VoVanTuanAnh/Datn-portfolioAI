@@ -26,7 +26,7 @@ const passwordValidationRegex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?
 
 const formSchema = z.object({
 
-    fullname: z.string().min(3,{
+    full_name: z.string().min(3,{
         message:"Your name must be at least 3 characters long."
     }),
 
@@ -64,7 +64,7 @@ const SignUpForm= ({className}:{className?:string}) =>{
         defaultValues: {
           email: "",
           password:"",
-          fullname:"",
+          full_name:"",
           confirmPassword:""
         },
       })
@@ -74,7 +74,7 @@ const SignUpForm= ({className}:{className?:string}) =>{
         setLoading(true)
 
         const formData = new FormData()
-        formData.append('fullname', values.fullname)
+        formData.append('full_name', values.full_name)
         formData.append('email', values.email)
         formData.append('password', values.password)
 
@@ -98,7 +98,7 @@ const SignUpForm= ({className}:{className?:string}) =>{
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField
                 control={form.control}
-                name="fullname"
+                name="full_name"
                 render={({ field }) => (
                     <FormItem>
                         <FormLabel>Full Name</FormLabel>

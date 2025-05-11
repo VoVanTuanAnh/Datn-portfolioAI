@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import LoginForm from './LoginForm'
 import { Button } from '../ui/button'
 import SignUpForm from './SignupForm'
-import { Link } from 'lucide-react'
 import ResetPassword from './ResetPassword'
 import ResetPasswordForm from './ResetPassword'
+import Link from 'next/link'
 
 
 
@@ -47,7 +47,7 @@ const AuthForm = () => {
                     </Button>
                 </div>
                 <p className='px-8 text-center text-sm text-muted-foreground'>
-                    By clicing sign up, you agree to our <Link href='#' className='underline underline-offset-4 hover:text-primary'>Terms of Service</Link>
+                    By clicing sign up, you agree to our <Link href='#' className='underline underline-offset-4 hover:text-primary'>Terms of Service </Link>
                     and <Link href='#' className='underline underline-offset-4 hover:text-primary'>Privacy Policy.</Link>
                 </p>
                 </>
