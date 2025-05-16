@@ -36,6 +36,11 @@ const navItems =
     icon: Image
    },
    {
+    title: "Generate Image",
+    url: '/generate_image',
+    icon: Image
+   },
+   {
     title: "My Models",
     url: '/models',
     icon: Frame
